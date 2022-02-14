@@ -1,9 +1,128 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color:#e5e7eb;
 }
 
 .header{
     display: flex;
+    padding: 8px;
+    background-color: #1F2937;
+    font-size: 24px;
+    color: #f9faf8
+}
+
+.logo{
+    flex:1 1 0;
+    text-align: center;
+}
+.right-links{
+    font-size: 18px;
+    display: flex;
+    flex:1 1 0;
+    padding: 0px;
+    justify-content: center;
+    gap:16px;
+    color:#e5e7eb;
+}
+
+.content{
+    display: flex;
+    background-color: #1F2937;
+    flex:1 1 0;
+    margin-bottom: 32px;
+}
+
+.left-side{
+    flex:1 1 0;
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+}
+
+.left-side-container{
+    display: flex;
+    flex:0 1 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 8px;
+}
+.left-side-container div{
+    width:400px;
+    flex:1;
+}
+#hero{
+    font-size: 48px;
+    flex-shrink: 1;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+#desc{
+    flex-shrink: 1;
+}
+.right-side{
+    flex:1 1 0;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 32px;
+}
+
+.place-holder{
+    background-color: gray;
+    flex:1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#e5e7eb
+}
+
+.first-button{
+    background-color: #3882f6;
+    border:none;
+    border-radius: 8px;
+    padding: 5px 32px;
+    color:#e5e7eb;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.images{
+    display:flex;
+    flex:1;
+    gap:50px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.item{
+    width:130px ;
+    font-size: medium;
+    font-weight: 300;
+    color: #1F2937;
+}
+
+
+.place-holders{
+    width:130px;
+    height: 130px;
+    border: 3px solid rgb(92, 92, 245);
+    border-radius: 6px;
 }
