@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body{
     display: flex;
     flex-direction: column;
     margin: 0;
+    font-family:Roboto,sans-serif;
 }
 
 a{
@@ -34,8 +37,9 @@ a{
 .content{
     display: flex;
     background-color: #1F2937;
-    flex:1 1 0;
+    flex-shrink: 1;
     margin-bottom: 32px;
+    height: 300px;
 }
 
 .left-side{
@@ -47,7 +51,6 @@ a{
 
 .left-side-container{
     display: flex;
-    flex:0 1 0;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -56,25 +59,17 @@ a{
 }
 .left-side-container div{
     width:400px;
-    flex:1;
-}
-#hero{
-    font-size: 48px;
-    flex-shrink: 1;
-    font-weight: bold;
-    color: #f9faf8;
 }
 
-#desc{
-    flex-shrink: 1;
-}
 .right-side{
     flex:1 1 0;
     padding: 32px;
     display: flex;
     justify-content: center;
     align-items: stretch;
-    padding: 32px;
+    padding: 50px;
+    padding-left: 90px;
+    padding-right: 90px;
 }
 
 .place-holder{
@@ -85,6 +80,19 @@ a{
     justify-content: center;
     color:#e5e7eb
 }
+
+#hero{
+    font-size: 48px;
+    flex-shrink: 1;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+#desc{
+    flex-shrink: 1;
+    color: #f9faf8;
+}
+
 
 .first-button{
     background-color: #3882f6;
@@ -101,6 +109,7 @@ a{
     gap:20px;
     font-size: 36px;
     font-weight: bolder;
+    margin-bottom: 30px;
 }
 
 .images{
@@ -117,12 +126,90 @@ a{
     font-size: medium;
     font-weight: 300;
     color: #1F2937;
+    flex:1 1 0;
 }
-
 
 .place-holders{
     width:130px;
     height: 130px;
     border: 3px solid rgb(92, 92, 245);
     border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.quote-container{
+    width:700px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.author{
+    align-self: flex-end;
+    margin-right:30px;
+}
+
+.middle{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.quote{
+    background-color: #e5e7eb;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.sign-container{
+    display: flex;
+    width:700px;
+    background-color: #3882f6;
+    padding: 32px;
+    border-radius: 10px;
+}
+
+.right{
+    flex:1 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-button{
+    padding:8px 32px;
+    background-color: #3882f6;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.motivation{
+    flex:4 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+    flex-direction: column;
+}
+
+button:hover{
+    background-color: rgb(159, 2, 199);
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:16px;
+    background-color: lightgray;
 }
